@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Playfair Display" rel="stylesheet">
+
+  <title>BBC</title>
+
+  <!-- FILE BOOTSTRAP -->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- FILE CSS -->
+  <link rel="stylesheet" href="./css/fontawesome.css">
+  <link rel="stylesheet" href="./css/gioithieuclb.css">
+  <link rel="stylesheet" href="./css/owl.css">
+  <link rel="stylesheet" href="./css/lightbox.css">
+</head>
+
+<body>
+  <style>
+    header {
+
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      z-index: 2;
+      padding-left: 250px;
+      padding-right: 250px;
+      top: 0;
+      /* Đảm bảo header nằm ở đầu trang */
+      left: 0;
+      /* Đảm bảo header không tràn ra ngoài về phía bên trái */
+      right: 0;
+      /* Đảm bảo header không tràn ra ngoài về phía bên phải */
+      box-sizing: border-box;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header .container .logo {
+      padding: 15px;
+      padding-top: 20px;
+      height: 30px;
+    }
+
+    header .container .logo img {
+      height: 100%;
+      padding-bottom: 30px;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      margin: 0px;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin: 0px;
+
+    }
+
+    header nav ul li a {
+      margin: 0px;
+
+      display: inline-block;
+      height: 75px;
+      line-height: 75px;
+      padding: 0 15px;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 16px;
+      color: #fff;
+      transition: 0.3s;
+
+
+    }
+
+    header nav ul li a:hover {
+      background-color: #e43a47;
+      color: #fff;
+    }
+  </style>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../home/images/logo.png" alt="NGO logo" />
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="../home/home.html">Trang chủ</a>
+          </li>
+          <li>
+            <a href="/introduce/gioithieuclb.html">Giới thiệu</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/">Tin tức - Sự kiện</a>
+          </li>
+          <li>
+            <a href="../pink-storm/pink_storm_23.html">Pink Storm</a>
+          </li>
+          <li>
+            <a href="../team/index.html">Cơ cấu nhân sự</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cái background video ở đầu -->
+  <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+      <source src="images/BIT_Trim_Trim.mp4" type="video/mp4" />
+    </video>
+
+    <!-- video overlay là làm mờ background video để làm nổi chữ -->
+    <div class="video-overlay header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="caption">
+              <h6>GIỚI THIỆU</h6>
+              <h2>CÂU LẠC BỘ TIN HỌC NGÂN HÀNG BIT-BAV </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cái slide các Ban ở dưới -->
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+
+            <div class="item1">
+              <div class="down-content">
+                <h4></h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="item2">
+              <div class="down-content">
+                <h4></h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="item3">
+              <div class="down-content">
+                <h4></h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="item4">
+              <div class="down-content">
+                <h4></h4>
+                <p></p>
+              </div>
+            </div>
+
+            <div class="item5">
+              <div class="down-content">
+                <h4></h4>
+                <p></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>THÔNG TIN CHI TIẾT</h2>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="categories">
+            <h4>BỘ MÁY CHỦ CHỐT HIỆN TẠI</h4>
+
+            <div class="anh">
+              <div class="col-lg-10">
+                <div class="anh2">
+                  <img src="images/1.jpg" alt="">
+                  <img src="images/2.jpg" alt="">
+                </div>
+              </div>
+
+              <div class="col-lg-10">
+                <div class="anh2">
+                  <img src="images/3.jpg" alt="">
+                  <img src="images/4.jpg" alt="">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="detail">
+            <p>Được thành lập vào năm 2010, trải qua hơn 13 năm hoạt động và phát triển, hiện nay "bộ máy" của BIT đang
+              hoạt động dưới sự vận hành của 4 ban gồm Ban Chủ nhiệm và 3 Ban thành viên: Ban Chuyên môn, Ban Tổ chức và
+              ban Truyền thông. Từ những cá nhân với những tính cách và suy nghĩ khác nhau đến những Ban độc lập nhưng tất
+              cả đều tựu chung dưới một mái nhà BIT, CLB đã biến những cá tính riêng biệt thành những mảnh ghép hoàn hảo
+              không thể thiếu để dần hoàn thiện bức tranh gia đình chung mang tên BIT. Mỗi cá nhân hay mỗi Ban đều đã và
+              đang góp phần hoàn thiện và thúc đẩy CLB ngày càng phát triển, tạo nên một BIT "toàn năng
+
+
+
+
+            <p>Có thể gọi Ban Chủ nhiệm chính là "đầu não" của BIT, những con người đóng vai trò quan trọng nhất trong việc thúc
+               đẩy sự phát triển của CLB. Với sự nhiệt huyết vô hạn và tinh thần lãnh đạo mạnh mẽ, được kế thừa qua nhiều thế hệ
+                sinh viên, những con người của Ban Chủ nhiệm đã tạo nên và xây dựng một BIT đầy năng động và sáng tạo, một môi
+                 trường tuyệt vời cho các thành viên của CLB.
+              Trải qua nhiều nhiệm kì, hiện tại Ban Chủ nhiệm của BIT đang vận hành với 4 vị trí bao gồm 1 Chủ nhiệm và 3 Phó
+              Chủ nhiệm, quản lý và tổ chức hầu hết mọi hoạt động trong CLB.</p>
+
+
+            <p>Mặc dù có rất nhiều hoạt động và sự kiện đầy thú vị, song về bản chất BIT vẫn là một CLB học thuật, mà đã nhắc đến
+              học thuật thì không thể không nhắc đến Ban Chuyên môn.Ban Chuyên môn chính là não bộ của BIT, nơi đóng vai trò quan
+              trọng trong việc nghiên cứu, phát triển, phổ cập kiến thức chuyên môn và kỹ năng đến với mọi thành viên CLB.
+              Mọi người luôn trau dồi học hỏi thêm những kiến thức mới, kịp thời cập nhật những xu hướng công nghệ và luôn
+              sẵn sàng chia sẻ, giúp đỡ mọi thành viên trong CLB về học thuật và các kỹ năng chuyên môn.  </p>
+
+
+            <p>Đúng như tên gọi, Ban Tổ chức của BIT là những người điều phối, lên kế hoạch chính cho các sự kiện của CLB.Thành viên Ban
+               Tổ chức là những người nhanh nhạy, tháo vát và linh hoạt ứng biến mọi tình huống, thích nghi kịp thời và đưa ra những quyết
+               định nhanh chóng và chính xác.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            background-color: #1a237e;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer h3 {
+            margin: 0 0 10px;
+        }
+
+        .footer .logo-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .footer .logo-section img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .footer .content-section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .footer .contact, .footer .social {
+            max-width: 300px;
+        }
+
+        .footer a {
+            color: #64b5f6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .contact p, .footer .social p {
+            margin: 5px 0;
+        }
+
+        .footer .icon {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer .icon img {
+            height: 20px;
+            width: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .footer .content-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer .contact, .footer .social {
+                max-width: none;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="footer">
+    <div class="logo-section">
+        <img src="images/logoBIT.png" alt="Logo">
+        <h2>CLB TIN HỌC NGÂN HÀNG BIT - BAV<br>HỌC VIỆN NGÂN HÀNG</h2>
+    </div>
+    <div class="content-section">
+        <div class="contact">
+            <h3>Contact:</h3>
+            <p>
+                <span class="icon">📧</span>
+                Gmail: <a href="mailto:bit.mis@bav.edu.vn">bit.mis@bav.edu.vn</a>
+            </p>
+            <p>
+                <span class="icon">📍</span>
+                Địa chỉ: Số 12 Phố Chùa Bộc, Quang Trung, Đống Đa, Hà Nội
+            </p>
+            <p>
+                <span class="icon">📞</span>
+                Hotline: <a href="tel:0333349331">0333349331 (Mr. Hữu Mạnh)</a>
+            </p>
+        </div>
+        <div class="social">
+            <h3>Follow us:</h3>
+            <p>
+                <span class="icon"><img src="images/2023_Facebook_icon.png" alt="Facebook"></span>
+                <a href="https://www.facebook.com/BIT.BAV" target="_blank">Facebook: https://www.facebook.com/BIT.BAV</a>
+            </p>
+            <p>
+                <span class="icon"><img src="images/ins.png" alt="Instagram"></span>
+                <a href="https://www.instagram.com/bit.bav.official" target="_blank">Instagram: https://www.instagram.com/bit.bav.official</a>
+            </p>
+            <p>
+                <span class="icon"><img src="images/pngwing.com.png" alt="TikTok"></span>
+                <a href="https://www.tiktok.com/@humansofbitbav" target="_blank">Tiktok: https://www.tiktok.com/@humansofbitbav</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script src="./jquery/jquery.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="./js/isotope.min.js"></script>
+  <script src="./js/owl-carousel.js"></script>
+  <script src="./js/lightbox.js"></script>
+  <script src="./js/tabs.js"></script>
+  <script src="./js/video.js"></script>
+  <script src="./js/slick-slider.js"></script>
+  <script src="./js/custom.js"></script>
+  <script>
+    $('.nav li:first').addClass('active');
+
+    var showSection = function showSection(section, isAnimate) {
+      var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        },
+          800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+        }
+      });
+    };
+
+    $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+      e.preventDefault();
+      showSection($(this).attr('href'), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
+</body>
+
+</body>
+
+</html>
