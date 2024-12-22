@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sự kiện Tuyển Cộng tác viên</title>
+  <style>
+    html,
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-attachment: fixed;
+      align-items: center;
+      min-height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./nenchinh.jpg);
+    }
+    .custom-box img {
+  display: block;
+  margin: 20px auto;
+  width: 100%; /* Hoặc một giá trị cụ thể như '800px' */
+  max-width: 800px; /* Để hình ảnh không lớn hơn container */
+  height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    .content {
+      margin-top: 50px;
+      margin-left: 300px;
+      max-width: 800px;
+      padding: 20px;
+      line-height: 1.8;
+      text-align: justify;
+      /* Căn đều nội dung */
+      background-color: #41353500;
+      /* Màu nền cho nội dung */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      /* Đổ bóng cho nội dung */
+      border-radius: 10px;
+      /* Bo góc cho nội dung */
+      color: #fff
+    }
+
+    .content h1 {
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: #fff;
+      text-align: center;
+    }
+
+    .content p {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .content img {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      /* Bo góc cho hình ảnh */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      /* Đổ bóng cho hình ảnh */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .content img:hover {
+      transform: scale(1.05);
+      /* Phóng to hình ảnh khi hover */
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      /* Căn các phần tử theo hai bên */
+      margin-top: 20px;
+      padding-right: 100px;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #06024f;
+      /* Màu nền của nút */
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navigation a:hover {
+      background-color: #0f0448e8;
+      /* Màu nền khi hover */
+    }
+  </style>
+</head>
+
+<body>
+  <style>
+    header {
+
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.745);
+      position: fixed;
+      z-index: 2;
+      padding-left: 250px;
+      padding-right: 250px;
+      top: 0;
+      /* Đảm bảo header nằm ở đầu trang */
+      left: 0;
+      /* Đảm bảo header không tràn ra ngoài về phía bên trái */
+      right: 0;
+      /* Đảm bảo header không tràn ra ngoài về phía bên phải */
+      box-sizing: border-box;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header .container .logo {
+      padding: 15px;
+      padding-top: 20px;
+      height: 30px;
+    }
+
+    header .container .logo img {
+      height: 100%;
+      padding-bottom: 30px;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      margin: 0px;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin: 0px;
+
+    }
+
+    header nav ul li a {
+      margin: 0px;
+
+      display: inline-block;
+      height: 75px;
+      line-height: 75px;
+      padding: 0 15px;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 16px;
+      color: #fff;
+      transition: 0.3s;
+
+
+    }
+
+    header nav ul li a:hover {
+      background-color: #e43a47;
+    }
+  </style>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./HSV.jpg" alt="NGO logo" />
+          <img src="./BIT.jpg" alt="NGO logo" />
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Trang chủ</a>
+          </li>
+          <li>
+            <a href="#">Giới thiệu</a>
+          </li>
+          <li>
+            <a href="#">Tin tức - Sự kiện</a>
+          </li>
+          <li>
+            <a href="#">Cơ cấu nhân sự</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <style>
+    .custombox1 {
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #ffffff00;
+      padding-right: 200px;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .custombox11 {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: px;
+      height: 50px;
+
+    }
+
+    .custombox11:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .cta-link {
+      display: inline-block;
+      background-color: #1f025600;
+      color: #fff;
+      text-decoration: none;
+
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+  </style>
+
+<div class="custombox1">
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#"> </a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#"> </a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#">#</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#"
+        >#</a
+      >
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#"
+        >#</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#">#</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#"># </a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#">#</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#">#</a>
+    </p>
+  </div>
+  <div class="custombox11" style="background-color: #f0f0f000">
+    <p style="text-align: center">
+      <a class="cta-link" href="#">#</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#">#</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#">#</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#"
+        >#</a
+      >
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="#"># </a>
+    </p>
+  </div>
+</div>
+  <div class="content">
+    <h1>SỰ KIỆN TUYỂN CỘNG TÁC VIÊN</h1>
+    <img src="./SNBIT.jpg" alt="Hình ảnh sinh nhật CLB BIT" />
+    <p>
+      ✨ Sự kiện "Chiêu mộ" thế hệ mới của BIT đang diễn ra sôi động với sứ mệnh tìm kiếm và chào đón những gương mặt trẻ đầy triển vọng. 🌟 Đây là cơ hội vàng dành cho các bạn sinh viên nhiệt huyết, giàu năng lượng, sẵn sàng cống hiến và bứt phá trong môi trường sáng tạo của CLB Tin học Ngân hàng BIT. 🚀
+    </p>
+    <p>
+      🎯 Mục tiêu của sự kiện không chỉ là thVIÊNt các cá nhân xuất sắc, mà còn tìm kiếm những bạn trẻ mang trong mình niềm đam mê mãnh liệt và khao khát phát triển. 💡 Các bạn sẽ không chỉ tham gia vào các hoạt động thú vị, mà còn được trải nghiệm môi trường làm việc chuyên nghiệp, học hỏi và phát triển kỹ năng mềm 🌱 – những hành trang không thể thiếu trên con đường sự nghiệp phía trước. 💼
+    </p>
+    <p>
+      ❤️ Đặc biệt, các thành viên BIT không chỉ đồng hành với bạn trong hành trình cá nhân mà còn cùng nhau lan tỏa giá trị cho cộng đồng. 🌍 Đây chính là cơ hội để các bạn không chỉ trưởng thành hơn mà còn góp phần xây dựng một tập thể đoàn kết, sáng tạo, và không ngừng vươn lên. 🤝
+    </p>
+    <p>
+      🎉 Hãy tự tin bước vào hành trình này và trở thành một phần của gia đình BIT! Với lòng nhiệt thành, tinh thần học hỏi, và ý chí mạnh mẽ, bạn sẽ viết nên những câu chuyện đẹp đẽ trong sự phát triển của CLB Tin học Ngân hàng BIT. ✨
+    </p>
+  </div>
+</body>
+
+</html>
