@@ -384,7 +384,7 @@ body {
 
 section.upcoming-meetings {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../../team/images/bulubala.png);
+    url(../images/nenchinh.jpg);
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -468,32 +468,69 @@ body {
 
 
 
-/* Footer */
-.site-footer {
-    background-color: #333;
-    color: white;
-    padding: 30px 0;
-    margin-top: 50px;
+footer {
+  background-color: #181818;
+  color: #7f7f7f;
+  padding: 50px 0;
+  font-size: 14px;
 }
 
-.footer-info, .footer-social {
-    margin-bottom: 20px;
+footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
 }
 
-.footer-social ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
+footer .title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+  padding: 0 0 5px 0;
 }
 
-.footer-social a {
-    color: white;
-    text-decoration: none;
+footer p {
+  margin-bottom: 10px;
 }
 
-.footer-social a:hover {
-    color: #ffd700;
+footer .linksContainer ul {
+  list-style: none;
+}
+
+footer .linksContainer ul li a {
+  text-decoration: none;
+  color: #7f7f7f;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+footer .newsLetterContainer img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 11px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer .newsLetterContainer input {
+  background-color: transparent;
+  border: 1px solid #7f7f7f;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+  margin-top: 10px;
+  color: #ccc;
+  border-radius: 30px;
+}
+footer .connectContainer a {
+  text-decoration: none;
+  color: #7f7f7f;
+  transition: color 0.3s ease;
+}
+
+footer .connectContainer a:hover {
+  color: #fff; /* Màu trắng khi hover */
 }
 
 /* Responsive */
