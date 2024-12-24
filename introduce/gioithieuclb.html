@@ -23,95 +23,102 @@
 <body>
   <style>
     header {
-
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      position: fixed;
-      z-index: 2;
-      padding-left: 250px;
-      padding-right: 250px;
-      top: 0;
-      /* Đảm bảo header nằm ở đầu trang */
-      left: 0;
-      /* Đảm bảo header không tràn ra ngoài về phía bên trái */
-      right: 0;
-      /* Đảm bảo header không tràn ra ngoài về phía bên phải */
-      box-sizing: border-box;
-    }
-
-    header .container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    header .container .logo {
-      padding: 15px;
-      padding-top: 20px;
-      height: 30px;
-    }
-
-    header .container .logo img {
-      height: 100%;
-      padding-bottom: 30px;
-    }
-
-    header nav ul {
-      list-style-type: none;
-      margin: 0px;
-    }
-
-    header nav ul li {
-      display: inline-block;
-      margin: 0px;
-
-    }
-
-    header nav ul li a {
-      margin: 0px;
-
-      display: inline-block;
-      height: 75px;
-      line-height: 75px;
-      padding: 0 15px;
-      text-decoration: none;
-      text-transform: capitalize;
-      font-size: 16px;
-      color: #fff;
-      transition: 0.3s;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 2;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+/* Container chứa hai logo */
+header .logos {
+display: flex;
+align-items: center;
+gap: 10px; /* Khoảng cách giữa hai logo */
+}
 
 
-    }
+header .logo {
+  height: 50px;
+}
 
-    header nav ul li a:hover {
-      background-color: #e43a47;
-      color: #fff;
-    }
+header .logo img {
+  height: 100%;
+  border-radius: 50%; /* Logo tròn */
+}
+
+/* Logo đầu tiên */
+header .logo:first-of-type {
+  margin-right: auto; /* Đẩy logo 1 về bên trái */
+}
+
+/* Logo thứ hai */
+header .second-logo {
+  margin-left: auto; /* Đẩy logo 2 về bên phải */
+}
+
+/* Thanh điều hướng */
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: var(--themeRed);
+  color: #fff;
+}
   </style>
-  <header>
-    <div class="container">
+ <header>
+  <div class="container">
+    <!-- Container chứa hai logo -->
+    <div class="logos">
       <div class="logo">
-        <img src="../home/images/logo.png" alt="NGO logo" />
+        <img src="./images/Huy_hiệu_Hội_SVVN.svg" alt="Logo 1" />
       </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="../home/home.html">Trang chủ</a>
-            </li>
-            <li>
-              <a href="../introduce/gioithieuclb.html">Giới thiệu</a>
-            </li>
-          
-            <li>
-              <a href="../news/BK&RC.html">Tin Tức - Sự kiện </a>
-            </li>
-            <li>
-              <a href="../team/index.htm">Cơ cấu nhân sự</a>
-            </li>
-          </ul>
-      </nav>
+      <div class="logo">
+        <img src="./images/logoBIT.png" alt="Logo 2" />
+      </div>
     </div>
-  </header>
-
+    <!--thanh điều hướng-->
+    <nav>
+      <ul>
+        <li>
+          <a href="../home (2)/home/home.html">Trang chủ</a>
+        </li>
+        <li>
+          <a href="../introduce/gioithieuclb.html">Giới thiệu</a>
+        </li>
+      
+        <li>
+          <a href="../news/news/BK&RC.html">Tin Tức - Sự kiện </a>
+        </li>
+        <li>
+          <a href="../team/index.html">Cơ cấu nhân sự</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- Header end here -->
   <!-- Cái background video ở đầu -->
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay muted loop id="bg-video">
@@ -346,13 +353,13 @@
         <div class="title">Hãy đến vớI chúng tôi</div>
         <ul>
           <li>
-            <a href="./home.html">Trang chủ</a>
+            <a href="../home (2)/home/home.html">Trang chủ</a>
           </li>
           <li>
             <a href="../introduce/gioithieuclb.html">Giới thiệu</a>
           </li>
           <li>
-            <a href="../tin_tuc_su_kien/tin_tuc.html">Tin Tức - Sự kiện </a>
+            <a href="../news/news/BK&RC.html">Tin Tức - Sự kiện </a>
           </li>
           <li>
             <a href="../team/index.html">Cơ cấu nhân sự</a>
