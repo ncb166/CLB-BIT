@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIS & TECH - DATA CHALLENGES</title>
+  <style>
+    html,
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./nenchinh.jpg);
+    }
+    .custom-box img {
+  display: block;
+  margin: 20px auto;
+  width: 100%; /* Hoặc một giá trị cụ thể như '800px' */
+  max-width: 800px; /* Để hình ảnh không lớn hơn container */
+  height: auto; /* Tự động điều chỉnh chiều cao theo tỷ lệ */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+    .content {
+      margin-left: 300px;
+      margin-top: 50px;
+      max-width: 800px;
+      padding: 20px;
+      line-height: 1.8;
+      text-align: justify;
+      /* Căn đều nội dung */
+      background-color: #ffffff00;
+      /* Màu nền cho nội dung */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      /* Đổ bóng cho nội dung */
+      border-radius: 10px;
+      /* Bo góc cho nội dung */
+      color: #f0f0f0;
+    }
+
+    .content h1 {
+      color: #f0f0f0;
+      text-align: center;
+    }
+
+    .content p {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .content img {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      /* Bo góc cho hình ảnh */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      /* Đổ bóng cho hình ảnh */
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .content img:hover {
+      transform: scale(1.05);
+      /* Phóng to hình ảnh khi hover */
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      /* Căn các phần tử theo hai bên */
+      margin-top: 20px;
+      padding-right: 100px;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #06024f;
+      /* Màu nền của nút */
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navigation a:hover {
+      background-color: #0f0448e8;
+      /* Màu nền khi hover */
+    }
+  </style>
+</head>
+
+<body>
+  <style>
+    header {
+
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      z-index: 2;
+      padding-left: 250px;
+      padding-right: 250px;
+      top: 0;
+      /* Đảm bảo header nằm ở đầu trang */
+      left: 0;
+      /* Đảm bảo header không tràn ra ngoài về phía bên trái */
+      right: 0;
+      /* Đảm bảo header không tràn ra ngoài về phía bên phải */
+      box-sizing: border-box;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header .container .logo {
+      padding: 15px;
+      padding-top: 20px;
+      height: 30px;
+    }
+
+    header .container .logo img {
+      height: 100%;
+      padding-bottom: 30px;
+    }
+
+    header nav ul {
+      list-style-type: none;
+      margin: 0px;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin: 0px;
+
+    }
+
+    header nav ul li a {
+      margin: 0px;
+
+      display: inline-block;
+      height: 75px;
+      line-height: 75px;
+      padding: 0 15px;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-size: 16px;
+      color: #fff;
+      transition: 0.3s;
+
+
+    }
+
+    header nav ul li a:hover {
+      background-color: #e43a47;
+    }
+  </style>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./HSV.jpg" alt="NGO logo" />
+          <img src="./BIT.jpg" alt="NGO logo" />
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="../../home (2)/home/home.html">Trang chủ</a>
+          </li>
+          <li>
+            <a href="../../intro/introduce/gioithieuclb.html">Giới thiệu</a>
+          </li>
+        
+          <li>
+            <a href="../../news/news/BK&RC.html">Tin Tức - Sự kiện </a>
+          </li>
+          <li>
+            <a href="../../team/team/index.html">Cơ cấu nhân sự</a>
+          </li>
+          </ul>
+          
+      </nav>
+    </div>
+  </header>
+  <style>
+    .custombox1 {
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #ffffff00;
+      padding-right: 200px;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .custombox11 {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: px;
+      height: 50px;
+
+    }
+
+    .custombox11:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .cta-link {
+      display: inline-block;
+      background-color: #1f025600;
+      color: #fff;
+      text-decoration: none;
+
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+  </style>
+
+<div class="custombox1">
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./Su_kien_chao_tan_sv.html"> </a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./Su_kien_chao_tan_sv.html"> </a>
+    </p>
+  </div>
+  <div class="custombox11" >
+    <p style="text-align: center">
+      <a class="cta-link" href="./Su_kien_chao_tan_sv.html">Sự kiện Chào Tân sinh viên</a>
+    </p>
+  </div>
+  <div class="custombox11" >
+    <p style="text-align: center">
+      <a class="cta-link" href="./Sinh_nhat_CLB.html">Sinh nhật CLB BIT - BAV</a>
+    </p>
+    </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./Su_kien_tuyen_cong_tac_vien.html">Sự kiện Tuyển Cộng tác viên</a>
+    </p>
+  </div>
+  <div class="custombox11"style="background-color: #f0f0f000">
+    <p style="text-align: center">
+      <a class="cta-link" href="./MIS & TECH - DATA CHALLENGES.html">DATA CHALLENGES</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./Talkshow.html">Talkshow học thuật</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./CAC_CHUONG_TRINH_ON_TAP.html">Ôn tập kiến thức</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./E-ESPORTS.html">E-sports</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./team-building.html">TEAM-BUILDING</a>
+    </p>
+  </div>
+  <div class="custombox11" >
+    <p style="text-align: center">
+      <a class="cta-link" href="./BK&RC.html">BACKUP & RECOVERY</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./Da_ngoai_du_xuan.html"> Dã ngoại du xuân - du hè</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./DAI_HOI_CHUYEN_GIAO.html">Đại hội chuyển giao CLB</a>
+    </p>
+  </div>
+  <div class="custombox11">
+    <p style="text-align: center">
+      <a class="cta-link" href="./Su_kien_chao_tan_sv.html"> </a>
+    </p>
+  </div>
+</div>
+  <div class="content">
+    <h1>MIS & TECH - DATA CHALLENGES</h1>
+    <img src="./anh/data.jpg" alt="Hình ảnh sinh nhật CLB BIT" />
+    <p> ✨ MIS & TECH - DATA CHALLENGES là một cuộc thi đầy hấp dẫn và ý nghĩa dành cho các bạn sinh viên toàn Học viện, lần đầu tiên được tổ chức bởi Liên chi Đoàn Khoa Hệ thống thông tin quản lý phối hợp cùng CLB Tin học Ngân hàng BIT - BAV. 🌟 Cuộc thi là sân chơi trí tuệ, nơi các bạn trẻ đam mê dữ liệu có thể thử sức, khám phá tiềm năng và tỏa sáng. 💡</p>
+    <p> 🎯 Ngay từ lần đầu tổ chức, MIS & TECH - DATA CHALLENGES đã thu hút sự chú ý lớn từ cộng đồng sinh viên. Với hàng loạt đội thi tài năng, những bài toán thực tế đầy thách thức 🧩 và sự hướng dẫn tận tình từ các chuyên gia trong lĩnh vực dữ liệu 📊, chương trình đã thực sự để lại dấu ấn mạnh mẽ.</p>
+    <p> 🌱 Không chỉ là một cuộc thi, sự kiện còn đánh dấu bước trưởng thành vượt bậc của CLB BIT cả về chuyên môn lẫn khả năng tổ chức. 💼 Đây là minh chứng rõ ràng cho sự phát triển không ngừng nghỉ của CLB trong việc mang đến những sân chơi bổ ích và cơ hội học hỏi, giao lưu cho các bạn sinh viên. 🚀</p>
+    <p> 🎉 MIS & TECH - DATA CHALLENGES hứa hẹn sẽ tiếp tục mở rộng quy mô và nâng tầm chất lượng trong các năm tới, góp phần xây dựng một cộng đồng sinh viên đam mê công nghệ, giàu tri thức và luôn sẵn sàng đón nhận những thử thách mới. 🌈</p>
+     <p> ❤️ Hãy cùng đồng hành và chờ đợi những chương trình đầy thú vị và ý nghĩa tiếp theo từ BIT nhé! 🤝</p>
+  </div>
+</body>
+
+</html>
